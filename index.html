@@ -16,9 +16,22 @@
          ping('https://_ip-pi_/').catch(function(err){
             alert("Please Connect to Niser Intranet to View the page") ? "" : location.reload(true);
         });
+
+
     </script>
 </head>
-
+<style>html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}</style>
 <body>
     <div class="tm-container mx-auto">
         <section class="tm-section tm-section-1">
@@ -274,6 +287,7 @@
         const droid = navigator.userAgent.match(/android/i) != null;
         const linusseb = navigator.userAgent.match(/linux/i) != null;
         const macky= navigator.userAgent.match(/Mac/i) != null;
+        const wsix= navigator.userAgent.match(/Win64/i) != null;
         const iphony= navigator.userAgent.match(/ iPhone|iPad/i) != null;
         
     
@@ -287,19 +301,15 @@
             element.setAttribute('target', '_blank');
         }else if(macky){
             element.href = "dowload/JellyfinMediaPlayer-1.6.0-macos.dmg"; //macos
+        }else if(wsix){
+          element.href = "download/JellyfinMediaPlayer-1.6.1-windows-x64.exe"; // winx64
         }else {
           element.href = "download/JellyfinMediaPlayer-1.6.0-windows-x86.exe"; // default
         }
       };
       getHref();
       </script>
-  <script src="__/firebase/8.8.0/firebase-app.js"></script>
 
-  <!-- TODO: Add SDKs for Firebase products that you want to use
-       https://firebase.google.com/docs/web/setup#available-libraries -->
-  
-  <!-- Initialize Firebase -->
-  <script src="__/firebase/init.js"></script>
 </body>
 
 <!-- Mirrored from jell0o.web.app/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 26 Aug 2021 21:05:05 GMT -->

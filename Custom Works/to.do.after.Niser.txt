@@ -1,0 +1,10 @@
+things to do after reaching Niser:
+
+--> get static ip
+--> edit jfa-go: change every ip to laps ip
+--> edit Jello web page both firebase n local: signup link,ip_lap,ip_pi
+--> change 192.168.1.33 to laps in jellyfin-web/main.#%$^%$&#^*.bundle.js
+--> change 192.168.1.33 to laps in jellyfin-web/movies-movies-html.xxxxxxx.bundle.js
+--> change the add side link.ps1 script ip to lAPS
+--> add "add side link.ps1" to ftp and incoporate it in webpage (do something in if windows part!!)  n dont forget to tell them to unblock
+--> change ip in new request ombi notification.
